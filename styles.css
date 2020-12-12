@@ -7,6 +7,95 @@
 body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    width: 650px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "headings headings"
+    "subscripion why-us";
+
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    margin: auto;
+
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.headings {
+    grid-area: headings;
+    height: 50%;
+    padding-left: 38px;
+    padding-top: 36px;
+}
+
+.headings h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.headings h3 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 12px;
+}
+
+.headings p {
+    color: hsl(218, 22%, 67%);
+    line-height: 24px;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 8px;
+}
+
+.subscription >div {
+    margin-left: 38px;
+    width: max-content;
+}
+
+.subscription h3 {
+    margin-top: 32px;
+    
+}
+
+.subscription .value {
+    font-size: 34px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.subscription .value span {
+    font-size: 13px;
+    opacity: 0.5;
+    margin-left: 12px;
+}
+
+.subscription button {
+    width: 220px;
+    padding: 12px;
+    margin-top: 12px;
+    align-self: center;
+    box-sizing: content-box;
+
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 8px;
+    color: white;
+    border: none;
+    box-shadow: 4px 2px 16px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
 }
 
 .attribution { 
